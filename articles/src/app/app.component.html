@@ -25,20 +25,20 @@
   </ng-template>
   <div class="form-group">
     <p>
-      Codigo:<input type="number" [(ngModel)]="art.codigo" class="form-control" />
+      Codigo:<input type="number" placeholder="Codigo del articulo" [(ngModel)]="art.codigo" class="form-control form-control-sm mb-1 ml-1 mr-1" />
     </p>
     <p>
-      descripcion:<input type="text" [(ngModel)]="art.descripcion" class="form-control" />
+      descripcion:<input type="text" placeholder="Nombre del articulo" [(ngModel)]="art.descripcion" class="form-control form-control-sm mb-1 ml-1 mr-1" />
     </p>
     <p>
-      precio:<input type="number" [(ngModel)]="art.precio" class="form-control" />
+      precio:<input type="number" placeholder="Precio del articulo" [(ngModel)]="art.precio" class="form-control form-control-sm mb-1 ml-1 mr-1" />
     </p>
     <div class="form-group">
-    <p>
-      <button class="btn btn-success" (click)="agregar()">Agregar</button>
-      <button class="btn btn-info" (click)="modificar()">Modificar</button>
-      <button class="btn btn-warning" (click)="borrarSeleccion()">Borrar item seleccionado</button>
-      <button class="btn btn-secondary" (click)="deshacer()">Deshacer</button>
+    <p class="text-center m-3">
+      <button class="btn m-3 btn-success" (click)="agregar()">Agregar</button>
+      <button class="btn m-3 btn-info" (click)="modificar()">Modificar</button>
+      <button class="btn m-3 btn-warning" (click)="borrarSeleccion()">Borrar item seleccionado</button>
+      <button class="btn m-3 btn-secondary" (click)="deshacer()">Deshacer</button>
     </p>
   </div>
 </div>
